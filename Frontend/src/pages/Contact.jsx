@@ -42,7 +42,7 @@ const Contact = () => {
             <div className="contact-content">
                 <div className="contact-info">
                     <h3>Contact Information</h3>
-                    <p>Feel free to reach out to me for collaborations, job opportunities, or just a friendly chat!</p>
+                    <p>Feel free to reach out to me for collaborations or just a friendly chat!</p>
 
                     <div className="info-item">
                         <FaEnvelope />
