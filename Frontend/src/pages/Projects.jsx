@@ -9,16 +9,23 @@ const Projects = () => {
             title: 'FindIt – Lost and Found Portal',
             description: 'A web-based portal for students to report and recover lost items within campus. Features seamless user interaction and managed item listings.',
             tech: ['React.js', 'Node.js', 'Express.js', 'MySQL'],
-            github: 'https://github.com/Dharaneesh3024',
+            github: 'https://github.com/Dharaneesh3024/Lost-and-Found',
             demo: 'https://lost-and-found-frontend-two-omega.vercel.app',
         },
         {
             title: 'ATS-Optimized Resume Builder',
             description: 'AI-assisted resume builder with a chatbot that generates ATS-streamlined bullet points dynamically via REST API.',
             tech: ['React', 'Node.js', 'Express', 'REST API'],
-            github: 'https://github.com/Dharaneesh3024',
+            github: 'https://github.com/Dharaneesh3024/Ats-friendly-resume-generator',
             demo: 'https://resume-generator-frontend-rose.vercel.app/',
         },
+        {
+            title: 'AI-driven Academic performance insights',
+            description: 'AI-driven platform for getting the performance insights to improve learning.',
+            tech: ['React', 'Node.js', 'Express', 'REST API','MongoDB'],
+            github: 'https://github.com/Dharaneesh3024/AI-based-Academic-performance-insight',
+            demo: 'https://ai-based-academic-performance-insig-three.vercel.app/',
+        }
     ];
 
     return (
