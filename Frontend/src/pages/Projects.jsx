@@ -6,11 +6,18 @@ import './Projects.css';
 const Projects = () => {
     const projects = [
         {
-            title: 'FindIt – Lost and Found Portal',
-            description: 'A web-based portal for students to report and recover lost items within campus. Features seamless user interaction and managed item listings.',
-            tech: ['React.js', 'Node.js', 'Express.js', 'MySQL'],
-            github: 'https://github.com/Dharaneesh3024/Lost-and-Found',
-            demo: 'https://lost-and-found-frontend-two-omega.vercel.app',
+            title: 'Car Rental Management System',
+            description: 'A backend-focused Car Rental Management System developed using Java and Spring Boot to manage cars, customers, branches, and rental operations. Features CRUD operations and REST APIs, MySQL database persistence via Spring Data JPA, rental availability checks to prevent conflicting bookings, and JWT-based authentication and authorization using Spring Security.',
+            tech: ['Java 21', 'Spring Boot', 'Spring Data JPA', 'Spring Security', 'JWT', 'MySQL', 'Maven'],
+            github: 'https://github.com/Dharaneesh3024/Car-Rental-Management-System',
+            demo: null,
+        },
+        {
+            title: 'AI-Powered Academic Performance Analytics & Personalized Learning Recommendation System',
+            description: 'An academic performance analytics platform designed to analyze student academic performance, identify students at academic risk, provide personalized learning recommendations, and deliver interactive dashboards with visual analytics and role-based authentication and management.',
+            tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST API'],
+            github: 'https://github.com/Dharaneesh3024/AI-based-Academic-performance-insight',
+            demo: 'https://ai-based-academic-performance-insig-three.vercel.app/',
         },
         {
             title: 'ATS-Optimized Resume Builder',
@@ -20,11 +27,11 @@ const Projects = () => {
             demo: 'https://resume-generator-frontend-rose.vercel.app/',
         },
         {
-            title: 'AI-driven Academic performance insights',
-            description: 'AI-driven platform for getting the performance insights to improve learning.',
-            tech: ['React', 'Node.js', 'Express', 'REST API','MongoDB'],
-            github: 'https://github.com/Dharaneesh3024/AI-based-Academic-performance-insight',
-            demo: 'https://ai-based-academic-performance-insig-three.vercel.app/',
+            title: 'FindIt – Lost and Found Portal',
+            description: 'A web-based portal for students to report and recover lost items within campus. Features seamless user interaction and managed item listings.',
+            tech: ['React.js', 'Node.js', 'Express.js', 'MySQL'],
+            github: 'https://github.com/Dharaneesh3024/Lost-and-Found',
+            demo: 'https://lost-and-found-frontend-two-omega.vercel.app',
         }
     ];
 
@@ -56,8 +63,12 @@ const Projects = () => {
                                 {project.tech.map(t => <span key={t}>{t}</span>)}
                             </div>
                             <div className="project-links">
-                                <a href={project.github} target="_blank" rel="noopener noreferrer"><FaGithub /> Code</a>
-                                <a href={project.demo} target="_blank" rel="noopener noreferrer"><FaExternalLinkAlt /> Live</a>
+                                {project.github && (
+                                    <a href={project.github} target="_blank" rel="noopener noreferrer"><FaGithub /> Code</a>
+                                )}
+                                {project.demo && (
+                                    <a href={project.demo} target="_blank" rel="noopener noreferrer"><FaExternalLinkAlt /> Live</a>
+                                )}
                             </div>
                         </div>
                     </motion.div>

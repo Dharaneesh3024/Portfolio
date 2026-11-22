@@ -9,12 +9,20 @@ const Experience = () => {
             skills: ['Java', 'Python', 'JavaScript', 'C'],
         },
         {
-            title: 'Development & Databases',
-            skills: ['React.js', 'Node.js', 'Express.js', 'MySQL', 'MongoDB'],
+            title: 'Frontend Development',
+            skills: ['React.js', 'HTML5', 'CSS3'],
         },
         {
-            title: 'Tools & Ecosystem',
-            skills: ['GitHub', 'VS Code', 'Postman'],
+            title: 'Backend & Frameworks',
+            skills: ['Spring Boot', 'Spring Data JPA', 'Spring Security', 'Node.js', 'Express.js'],
+        },
+        {
+            title: 'Databases',
+            skills: ['MySQL', 'MongoDB'],
+        },
+        {
+            title: 'Tools & Technologies',
+            skills: ['Git', 'GitHub', 'Maven', 'Postman', 'REST APIs', 'JWT Authentication', 'VS Code'],
         },
         {
             title: 'Areas of Interest',
